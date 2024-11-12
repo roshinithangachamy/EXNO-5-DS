@@ -66,8 +66,10 @@ plt.plot(years,yeild_apples)
 
 ```
 years=range(2000,2012)
-apples= [0.895,0.91,0.919,0.926,0.929,0.931,0.934,0.936,0.937,0.9375,0.9372,0.939]
-oranges=[0.962,0.941,0.930,0.923,0.918,0.908,0.907,0.904,0.901,0.898,0.9,0.896,]
+apples= [0.895,0.91,0.919,0.926,0.929,0.931,
+0.934,0.936,0.937,0.9375,0.9372,0.939]
+oranges=[0.962,0.941,0.930,0.923,0.918,
+0.908,0.907,0.904,0.901,0.898,0.9,0.896,]
 plt.plot(years,apples)
 plt.plot(years,oranges)
 plt.xlabel('Year')
@@ -178,10 +180,12 @@ plt.show()
 
 ```
 import matplotlib.pyplot as plt
-ages=[2,5,70,40,30,45,50,45,50,45,43,40,44,60,7,13,57,18,90,77,32,21,20,40]
+ages=[2,5,70,40,30,45,50,45,50,45,43,
+40,44,60,7,13,57,18,90,77,32,21,20,40]
 range=(0,100)
 bins=10
-plt.hist(ages,bins,range,color='green',histtype='bar',rwidth=0.8)
+plt.hist(ages,bins,range,color='green',
+histtype='bar',rwidth=0.8)
 plt.xlabel('age')
 plt.ylabel('No.of people')
 plt.title('My histogram')
@@ -191,7 +195,8 @@ plt.show()
 
 ```
 import matplotlib.pyplot as plt
-x=[2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+x=[2,1,6,4,2,4,8,9,4,2,4,10,6,4,
+5,7,7,3,2,7,5,3,5,9,2,1]
 plt.hist(x,bins=10,color='blue',alpha=0.5)
 plt.show()
 ```
@@ -221,7 +226,7 @@ activities=['eat','sleep','work','play']
 slices=[3,7,8,6]
 colors=['purple','skyblue','pink','violet']
 plt.pie(slices,labels=activities,colors=colors,startangle=90,
-        shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
+shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
 plt.legend()
 plt.show()
 ```
